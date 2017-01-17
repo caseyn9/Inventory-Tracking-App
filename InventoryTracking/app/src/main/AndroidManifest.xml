@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sweng.aa03.inventorytracking">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ScanBarcodeActivity"
+            android:label="Scan Barcode"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".view.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ProjectsActivity"
+            android:label="Projects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ViewIndividualProjectActivity"
+            android:label="Projects"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.IndividualsActivity"
+            android:label="Individuals"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.NewIndividualActivity"
+            android:label="New Individual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.EquipmentActivity"
+            android:label="Equipment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.NewProjectActivity"
+            android:label="New Project"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.NewEquipmentActivity"
+            android:label="@string/title_activity_add_equipment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.ListGenerationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.EquipmentOptionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.AssignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ViewUniqueEquipmentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.ManualBarcodeActivity"></activity>
+    </application>
+
+</manifest>

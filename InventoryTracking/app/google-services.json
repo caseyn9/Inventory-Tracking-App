@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "509700099826",
+    "firebase_url": "https://sweng-1f6f6.firebaseio.com",
+    "project_id": "sweng-1f6f6",
+    "storage_bucket": "sweng-1f6f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509700099826:android:2ba4d021513b3a29",
+        "android_client_info": {
+          "package_name": "sweng.aa03.inventorytracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509700099826-jkj2iofkgq7q0jebv4fkdlocu0lbvkm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2cERRxWG6Zrf2SHYoEUYBPWu7Uk6O_EI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

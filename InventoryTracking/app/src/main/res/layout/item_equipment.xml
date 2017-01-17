@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonLeft"
+        android:layout_toStartOf="@+id/buttonLeft"
+        android:layout_height="70dp">
+
+        <TextView
+            android:text="No name given"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemName"
+            android:textColor="@color/appThemeColor"
+            android:textAlignment="gravity"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:ellipsize="end"
+            android:elevation="1dp"
+            android:layout_toLeftOf="@+id/buttonLeft"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appThemeColor"
+            android:textAlignment="gravity"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/individualName"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRight"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLeft"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/buttonRight"
+        android:layout_toStartOf="@+id/buttonRight" />
+
+</RelativeLayout>

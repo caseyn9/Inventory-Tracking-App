@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/appThemeColor"
+    android:gravity="center">
+
+    <TextView
+        android:text="@string/menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descriptionText"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="5"
+        android:id="@+id/fieldUsername"
+        android:textAlignment="center"
+        android:hint="@string/username"
+        android:minWidth="150dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="5"
+        android:id="@+id/fieldPassword"
+        android:textAlignment="center"
+        android:selectAllOnFocus="false"
+        android:hint="@string/password"
+        android:minWidth="150dp"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        />
+
+    <Button
+        android:text="@string/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:minWidth="150dp"
+        android:textAlignment="center"
+        android:textColor="@color/appThemeColor"
+        android:textColorHint="@color/appThemeColor"
+        android:background="@android:color/white"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:text="@string/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerButton"
+        android:minWidth="150dp"
+        android:textColor="@color/appThemeColor"
+        android:background="@android:color/white" />
+
+</LinearLayout>

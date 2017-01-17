@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_assign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sweng.aa03.inventorytracking.view.AssignActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/barcodeInput"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:hint="Barcode"
+        android:gravity="center"/>
+
+
+    <RadioButton
+        android:text="Project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/projectRButton"
+        android:checked="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/indivRButton"
+        android:layout_alignBottom="@+id/indivRButton"
+        android:layout_toLeftOf="@+id/assignToText"
+        android:layout_toStartOf="@+id/assignToText"
+        android:onClick="projectPressed"/>
+
+    <TextView
+        android:text="Assign to:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/assignToText"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/projectRButton"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:text="Individual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indivRButton"
+        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="159dp"
+        android:layout_below="@+id/barcodeInput"
+        android:layout_toRightOf="@id/assignToText"
+        android:layout_toEndOf="@id/assignToText"
+        android:onClick="individualPressed"/>
+
+    <TextView
+        android:text="Project Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/projectNameText"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/indivRButton"
+        android:layout_alignLeft="@+id/assignButton"
+        android:layout_alignStart="@+id/assignButton" />
+
+    <Button
+        android:text="Assign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/assignButton"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:onClick="assignClicked" />
+
+    <TextView
+        android:text="Individual Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indivNameText"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/projectSpinner"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/projectSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/projectNameText"
+        android:layout_alignLeft="@+id/indivSpinner"
+        android:layout_alignStart="@+id/indivSpinner"
+        android:layout_alignRight="@+id/barcodeInput"
+        android:layout_alignEnd="@+id/barcodeInput"
+        android:gravity="center"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/indivSpinner"
+        android:layout_below="@+id/indivNameText"
+        android:layout_alignLeft="@+id/barcodeInput"
+        android:layout_alignStart="@+id/barcodeInput"
+        android:layout_alignRight="@+id/barcodeInput"
+        android:layout_alignEnd="@+id/barcodeInput"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_result"
+        android:layout_below="@+id/barcodeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Return Date"
+        android:id="@+id/date_button"
+        android:gravity="center"
+        android:onClick="setDate"
+        android:layout_below="@+id/date_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</RelativeLayout>
